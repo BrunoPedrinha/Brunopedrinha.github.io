@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Physics Simulations</title>
+<link rel="stylesheet" type="text/css" href="mystylesheet.css">
+
+
+</head>
+
+<body bgcolor="#333333">
+
+
+<div class = "projects_wrapper">
+	<div class = "section_title">
+    	<h1>Physics Simulations</h1>
+    </div>
+	<div class = "entry_div"><a name = "buoyancy">
+    	<h2>Buoyancy(Box2D)</h2>
+        <p1>This is a buoyancy simulation done in Box2D using buoyancy physics equations along side arc segment 		
+        equations to give the circle the effect that it is floating on water. There is an invisible line that is 
+        acting as the water line in this simulation. </p1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/yIsjt8zZ7JI" frameborder="0" 
+       allowfullscreen></iframe
+    ></a>    
+    </div>
+    <div class="bcode">
+        <input type = "checkbox" id="zoom" />
+        <label for="zoom">
+   			<img src="physicscodesnip.PNG" height="150" width="149"/>
+        </label>
+	</div>
+    
+    <div class = "empty_div"></div>
+    
+    
+  <div class = "entry_div"><a name = "springs">
+    <h2>Springs(Box2D)</h2>
+        <p1>The left spring is constant without a dapening factor where the right spring has a dapening factor as 
+        you'll see it eventually slows down and the left spring does not. </p1>
+       <iframe width="400" height="315" src="https://www.youtube.com/embed/zXQuikctVKY" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+    <div class = "code_div">
+        <div class="spring_code1">
+            <input type = "checkbox" id="zoom1" />
+            <label for="zoom1">
+                <img src="simplespringcode.PNG" height="150" width="149"/>
+            </label>
+        </div>
+        <div class="spring_code2">
+            <input type = "checkbox" id="zoom2" />
+            <label for="zoom2">
+                <img src="dampspringcode.PNG" height="150" width="149"/>
+            </label>
+        </div>
+        
+        <div class="spring_code3">
+            <input type = "checkbox" id="zoom3" />
+            <label for="zoom3">
+                <img src="callingspringfunctionscode.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+    
+    <div class = "empty_div"></div>
+    <div class = "entry_div"><a name = "pool">
+    <h2>Realistic Collision(C#/XNA)</h2>
+        <p1>A pool game depicting realistic collision between objects, in this case they are balls. I combine 
+        coefficient of restitution and conservation of momentum to resolve realistic collisions based on physics 
+        formulas. The balls all use the Equations of Motion to move when they are hit and the ball being shot out of the cannon uses the same Equations of Motion.</p1>
+       <iframe width="400" height="315" src="https://www.youtube.com/embed/aA6nL8pRjuk" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+     <div class = "code_div2">
+        <div class="col_code1">
+                <input type = "checkbox" id="zoom4" />
+                <label for="zoom4">
+                    <img src="realisticcollisioncode.PNG" height="150" width="149"/>
+                </label>
+            </div>
+        <div class="col_code2">
+            <input type = "checkbox" id="zoom5" />
+            <label for="zoom5">
+                <img src="lawsofmotioncode.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+    <div class = "empty_div"></div>
+    
+    
+    <div class = "entry_div"><a name = "cloth">
+    <h2>Cloth Simulation(C++/OPENGL)</h2>
+        <p1>A cloth simulation done in OpenGL with C++. This is using mass points which are connected by springs to 
+        make triangles. The mass points have a gravity option which allowed me to keep the corner mass point frozen to 		better emulate the cloth physics. The springs have a dampening effect (like the one of the springs in my 
+        previous simulation) which allows each spring to react differently according to their distance. I also have a 
+        custom Vector class which I created for this project as well as future projects which contains operation 
+        overloading as well as other Vector mathematics.</p1>
+       <iframe width="400" height="315" src="https://www.youtube.com/embed/JujszjWWNwI" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+    <div class = "code_div2">
+        <div class="cloth_code1">
+                <input type = "checkbox" id="zoom6" />
+                <label for="zoom6">
+                    <img src="vectorclasscode1.PNG" height="150" width="149"/>
+                </label>
+            </div>
+        <div class="cloth_code2">
+            <input type = "checkbox" id="zoom7" />
+            <label for="zoom7">
+                <img src="vectorclasscode2.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+    <div class = "empty_div"></div>
+    <div class = "empty_div"></div>
+    <div class = "entry_div">
+    	<div class = "games_list_div"><a href = "projects.html" class = "test"> BACK 
+<div class = "games_list_div"><a href = "index.html" class = "test"> HOME </div></div>
+    
+    
+</div>
+
+</body>
+</html>

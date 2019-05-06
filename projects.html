@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Projects</title>
+<link rel="stylesheet" type="text/css" href="mystylesheet.css">
+
+
+</head>
+
+<body bgcolor="#333333">
+
+
+<div class = "projects_wrapper2">
+	<div class = "section_title">
+    	<h1>Projects</h1>
+    </div>
+    <div class = "entry_div"><a name = "tile_editor">
+    	<h2>Tile Map Editor(C++/SDL)</h2>
+        <p1>A Tile Map Editor that includes tile deletion when placing a new tile, tile map saving as a text document,	
+         tile importing, and map importing. The map size is fixed to 40 by 25 and tile width and height of 48 which 
+         results in a 1920 by 1200 width and height.</p1>
+         <p></p>
+         <p1>UPDATE: Recently updated the tile editor. Added width and height adjustments so I can size the map. Added zoom in and zoom out effect for the tile map. Fixed the tile class; each tile no longer takes and loads an image, images are now pre-loaded on start-up which reduces load times significantly and allows for much larger maps. Also took out the pre-loaded tile sheet and loaded 2 default tiles and more can be loaded in with the import tile function. </p1><a href = "https://www.youtube.com/watch?v=tcP2G3omm7c" class = "test">Link</a> <p1>to the old tile editor video.</p1>
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/tEaW1Sa9ogI" frameborder="0" allowfullscreen></iframe>
+    <a></div>
+     <div class = "code_div2">
+        <div class="col_code1">
+                <input type = "checkbox" id="zoom8" />
+                <label for="zoom8">
+                    <img src="tilemapeditorcode1.PNG" height="150" width="149"/>
+                </label>
+            </div>
+        <div class="col_code2">
+            <input type = "checkbox" id="zoom9" />
+            <label for="zoom9">
+                <img src="tilemapeditorcode2.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+    <div class = "empty_div"></div>
+	<div class = "entry_div"><a name = "zero_gravity">
+    	<h2>Zero Gravity(C++/SDL)</h2>
+        <p1>This was my first program made with C++ and SDL. This game was done in one day after 
+        hearing about several 1-day space shooter challenges I decided to see what I could do with the 1-day 
+        constraint and limited knowledge of C++ and SDL.</p1>
+        <p1>The particle engine is homemade and is also used to spawn white particles to act as a parallax scrolling 		
+        field of stars. This game also includes a homemade Vector class that includes operator overloading and other 
+        operations like finding the Magnitude of a Vector to know what distance it has traveled from it's original 
+        spawn point - I use that to delete the particles after they've traveled a certain distance from their spawn 
+        point. The main menu is also only keyboard controlled.</p1>
+       <iframe width="400" height="315" src="https://www.youtube.com/embed/F7Mwk7aBWtg" frameborder="0" 
+       allowfullscreen></iframe>
+    </a></div>
+    <div class = "code_div2">
+        <div class="col_code1">
+                <input type = "checkbox" id="zoom10" />
+                <label for="zoom10">
+                    <img src="particlecode1.PNG" height="150" width="149"/>
+                </label>
+            </div>
+        <div class="col_code2">
+            <input type = "checkbox" id="zoom11" />
+            <label for="zoom11">
+                <img src="particlecode2.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+    
+    <div class = "empty_div"></div>
+    
+    <div class = "entry_div"><a name = "mmo_jrpg">
+    	<h2>MMO-JRPG(C++/SDL/enet)</h2>
+		<h2>Work In Progress</h2>
+        <p1>This is an MMO-JRPG using enet and my Tile Map Editor. This game has a turn-based Final Fantasy-esque 
+        battle system with a custom magic system unlike that of Final Fantasy. The magic system has the user select 2 	
+        spells to create a powerful spell that is cast on the opponent. Aside from gameplay I have a custom simple
+        save encryption file which uses a key to encrypt and decrypt local save files. The encryption key changes every time the
+        game saves, and the key is saved locally for the time being. The game's server has the authority in the game 
+        world which means when a player moves the server checks if the move is valid(i.e if the user hasn't 
+        disconnected or is not hitting a wall/object), if that is not the case the player may move. Client side if the player has already moved, and if the move is safe it will remain where it moved, but will only update for server 
+        if the move was valid. Also implemented is a quest system that reads quests off of an XML sheet and an 
+        inventory system with navigation as well as function to use items in the inventory.</p1>
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/2bEdy04QAgs" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+    
+    <div class = "code_div2">
+        <div class="col_code1">
+                <input type = "checkbox" id="zoom14" />
+                <label for="zoom14">
+                    <img src="simpleencryptcode.PNG" height="150" width="149"/>
+                </label>
+            </div>
+        <div class="col_code2">
+            <input type = "checkbox" id="zoom15" />
+            <label for="zoom15">
+                <img src="simpleencryptcode1.PNG" height="150" width="149"/>
+            </label>
+        </div>
+    </div>
+	
+	<div class = "empty_div"></div>
+	
+	<div class = "entry_div"><a name = "ultimate_showdown">
+    	<h2>The Ultimate Showdown(Flash/AS3)</h2>
+        <p1>This is a fighting game I worked on, with a friend of mine, when we were learning Flash/AS3. 
+		This game has a local save file to keep track of combos and rounds fought, various characters to choose from
+		in the character selection screen, and multiple key press to create a combo. This game also has 2 levels which are randomly selected when
+		both characters are ready to fight. My job was to work on half of the characters get their animations imported into flash 
+		and make sure they could combo a fireball. We both worked on the physics engine together as well as the gameplay. 
+		I was also responsible for the title screen and levels/maps that the characters fight on. The project can be found <a href = "https://github.com/BrunoPedrinha/UltimateShowdown/tree/master/The%20Ultimate%20Showdown" class = "test">here</a></p1>
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/bkgWC1rvn4o" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+	
+	<div class = "empty_div"></div>
+	
+	<div class = "entry_div"><a name = "neural_net">
+    	<h2>My First Neural Network(python)</h2>
+        <p1>This is my first Neural Network and introduction to AI! I'm using the numpy library in python to create matrices and compute math with the matrices. This neural network uses the Sigmoid activation function. I chose the Sigmoid activation because I only need an output between 0 and 1 since I'm only using binary matrices and I'm not doing anything overly complicated yet. I feed the neural network 4 1x4 matrices. If the matrix has a 1 in the first column ([<b>1</b>,0,0,0]) then the bots answer should be as close to 1 as possible, but if the matrix has a 0 in the first column ([<b>0</b>,1,0,1]) then the bots answer should be as close to 0 as possible. The neural network trains off these 4 examples 60,000 times using matrix multiplication coupled with forward propagation, backpropagation, and gradient descent to fix the error margin so the bot's answer is closer to the right answer, and showing the error margin after intervals of 10,000 so you can see how effective the training has been. Once training is done I have 12 4x1 matrices and the bot picks 1 at random, gives an expected answer, and then gives the bot answer. If the answer is greater than 0.5 a cat picture will be shown, otherwise a dog picture will be shown. 
+
+In the above video, the error margin should be close to [0, 1, 1, 0], as you can see the bot is learning and fixing the error margin every training session. <a href = "https://github.com/BrunoPedrinha/DiscordMusicBot" class = "test">here</a></p1>
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/m6D6qbzTTok" frameborder="0" allowfullscreen></iframe>
+    </a></div>
+    <div class = "empty_div"></div>
+    <div class = "entry_div">
+    	<div class = "games_list_div"><a href = "index.html" class = "test"> BACK 
+    	<div class = "games_list_div"><a href = "physics.html" class = "test"> FORWARD </div></div>
+
+
+</div>
+
+</body>
+</html>
